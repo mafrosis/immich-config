@@ -15,6 +15,8 @@ services:
       TZ: Australia/Melbourne
       IMMICH_CONFIG_FILE: /immich.json
       IMMICH_TELEMETRY_INCLUDE: all
+    extra_hosts:
+      cupcake: 192.168.1.182
     ports:
       - 2283:2283
     volumes:
@@ -29,6 +31,8 @@ services:
   immich-ml:
     image: ghcr.io/immich-app/immich-machine-learning:${IMMICH_VERSION:-release}
     restart: unless-stopped
+    ports:
+      - 3003:3003
     volumes:
       - model-cache:/cache
 
