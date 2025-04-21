@@ -17,7 +17,7 @@
     "cqMode": "auto",
     "twoPass": false,
     "preferredHwDevice": "auto",
-    "transcode": "required",
+    "transcode": "disabled",
     "tonemap": "hable",
     "accel": "disabled",
     "accelDecode": false
