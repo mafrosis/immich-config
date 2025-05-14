@@ -16,7 +16,7 @@ services:
       - immich-data:/usr/src/app/upload
       - ./immich.json:/immich.json:ro
       - /etc/localtime:/etc/localtime:ro
-      - /home/mafro/syncthing/KidsPhotos:/photos/kids:ro
+      - /home/mafro/syncthing/KidsPhotos:/photos/kids
     depends_on:
       - redis
       - database
