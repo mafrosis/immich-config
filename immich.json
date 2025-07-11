@@ -140,7 +140,7 @@
     "extractEmbedded": false
   },
   "newVersionCheck": {
-    "enabled": true
+    "enabled": false
   },
   "trash": {
     "enabled": true,
